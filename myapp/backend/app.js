@@ -11,15 +11,15 @@ dotenv.config();
 
 app.use(cookieParser());
 app.use(express.json());
-app.use(
-	cors({
-		origin: [
-			"http://localhost:3000",
-		],
-		credentials: true,
-	})
-);
-
+// app.use(
+// 	cors({
+// 		origin: [
+// 			"http://localhost:3000",
+// 		],
+// 		credentials: true,
+// 	})
+// );
+app.use(cors());
 
 mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (e) => {
 	console.log(e ? e : "Connected successfully to database");
