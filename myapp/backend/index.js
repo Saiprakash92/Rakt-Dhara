@@ -25,6 +25,7 @@ mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: tr
 	console.log(e ? e : "Connected successfully to database");
 });
 
+
 app.use("/auth", require("./routers/authRouter"));
 app.use("/user", require("./routers/userRouter"));
 app.use("/bank", require("./routers/bankRouter"));
