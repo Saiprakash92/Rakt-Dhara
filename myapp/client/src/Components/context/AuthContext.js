@@ -8,7 +8,7 @@ function AuthContextProvider(props) {
   const [user, setUser] = useState([]);
 
   async function getLoggedIn() {
-    const loggedInRes = await axios.get("http://localhost:8080/auth/loggedIn", { withCredentials: true });
+    const loggedInRes = await axios.get("https://rakt-dhara.vercel.app/loggedIn", { withCredentials: true });
     setLoggedIn(loggedInRes.data.auth);
     setUser(loggedInRes.data.user);
   }
