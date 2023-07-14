@@ -6,7 +6,7 @@ const Popup = (props) => {
     return (
         <div>
             {
-                props.popup != -1 && <div className="popup h-[150%] overflow-scroll">
+                props.popup !== -1 && <div className="popup h-[150%] overflow-scroll">
                     <div className='popup_inner rounded-lg p-7 overflow-y-scroll'>
                         <div>
                             <h1 className='text-2xl font-bold inline-block'>
