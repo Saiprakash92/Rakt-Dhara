@@ -1,6 +1,6 @@
 {
     "version" :2,
-      "name" : "amitstore",
+      "name" : "rakt-dhara",
       "builds" : [
         {
           "src" : "./index.js",
