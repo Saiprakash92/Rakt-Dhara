@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(
 	cors({
 		origin: [
-			"https://rakt-dhara.vercel.app",
+			"https://rakt-dhara-vz7r.vercel.app/",
 		],
 		credentials: true,
 	})
